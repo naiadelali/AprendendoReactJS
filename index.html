@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>First Component</title>
+</head>
+<body>
+
+<!-- container node -->
+<div id="app"></div>
+
+<script data-require="react@*" data-semver="0.13.1" src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react.js"></script>
+<script data-require="react-jsx@*" data-semver="0.13.1" src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.1/JSXTransformer.js"></script>
+<script type="text/jsx">
+    /** @jsx React.DOM */
+    "use strict";
+    var MessageBox = React.createClass({
+        render: function() {
+            return (
+                    <h1>Hello, World</h1>
+            );
+        }
+    });
+
+    React.render(
+            <MessageBox />,
+            document.getElementById('app'),
+            function () {
+                console.log('after render');
+            }
+    )
+
+</script>
+</body>
+</html>
