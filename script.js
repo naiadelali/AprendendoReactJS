@@ -1,2 +1,0 @@
-/** @jsc React.DOM */
-
